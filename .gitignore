@@ -87,3 +87,5 @@ Pipfile*
 .spyderproject
 
 .ropeproject/
+
+.DS_Store
