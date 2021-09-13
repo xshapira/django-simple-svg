@@ -18,7 +18,7 @@ Install it from pypi.
 
     $ pip install django-svg
 
-Add ``svg`` to your ``INSTALLED_APPS``.
+Add ``django_svg`` to your ``INSTALLED_APPS``.
 
 
     INSTALLED_APPS = (
