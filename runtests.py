@@ -11,15 +11,22 @@ BASE_DIR = os.path.abspath(DIRNAME)
 settings.configure(
     BASE_DIR=BASE_DIR,
     DEBUG=True,
+    SECRET_KEY="eBrZLVx4hUoBrkjwFCGOOtnALLCmle95whOGMC9tllG5FZIzZIdyegKua",
     DATABASE_ENGINE="sqlite3",
     DATABASE_NAME=os.path.join(DIRNAME, "database.db"),
     INSTALLED_APPS=(
         "django.contrib.auth",
         "django.contrib.contenttypes",
         "django.contrib.sessions",
+        "django.contrib.messages",
         "django.contrib.staticfiles",
         "django.contrib.admin",
         "django_svg",
+    ),
+    MIDDLEWARE=(
+        "django.contrib.sessions.middleware.SessionMiddleware",
+        "django.contrib.auth.middleware.AuthenticationMiddleware",
+        "django.contrib.messages.middleware.MessageMiddleware",
     ),
     STATICFILES_DIRS=[os.path.join(BASE_DIR, "static")],
     STATIC_ROOT=os.path.join(BASE_DIR, "staticfiles"),
@@ -46,6 +53,6 @@ settings.configure(
 django.setup()
 
 test_runner = DiscoverRunner(verbosity=1)
-failures = test_runner.run_tests(["svg"], verbosity=1)
+failures = test_runner.run_tests(["django_svg"], verbosity=1)
 if failures:
     sys.exit(failures)
