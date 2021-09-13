@@ -21,7 +21,7 @@ settings.configure(
         "django.contrib.messages",
         "django.contrib.staticfiles",
         "django.contrib.admin",
-        "easy_svg",
+        "simple_svg",
     ),
     MIDDLEWARE=(
         "django.contrib.sessions.middleware.SessionMiddleware",
@@ -53,6 +53,6 @@ settings.configure(
 django.setup()
 
 test_runner = DiscoverRunner(verbosity=1)
-failures = test_runner.run_tests(["easy_svg"], verbosity=1)
+failures = test_runner.run_tests(["simple_svg"], verbosity=1)
 if failures:
     sys.exit(failures)

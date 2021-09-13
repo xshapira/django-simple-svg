@@ -1,4 +1,4 @@
-# django-easy-svg
+# django-simple-svg
 
 A simple plugin that adds an ``svg`` template tag to inline your SVGs in your
 Django templates.
@@ -13,15 +13,15 @@ All credits goes to [Mitchel Cabuloy](https://github.com/mixxorz)
 Install it from pypi.
 
 ```bash
-$ pip install django-easy-svg
+$ pip install django-simple-svg
 ```
 
-Add ```easy_svg``` to your ```INSTALLED_APPS```.
+Add ```simple_svg``` to your ```INSTALLED_APPS```.
 
 ```python
     INSTALLED_APPS = (
         ...
-        'easy_svg',
+        'simple_svg',
         ...
     )
 ```

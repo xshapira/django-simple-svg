@@ -9,18 +9,18 @@ with open(join(dirname(__file__), "README.md")) as readme:
 # allow setup.py to be run from any path
 chdir(normpath(abspath(dirname(__file__))))
 
-import easy_svg  # noqa
+import simple_svg  # noqa
 
 setup(
-    name="django-easy-svg",
-    version=easy_svg.__version__,
+    name="django-simple-svg",
+    version=simple_svg.__version__,
     packages=find_packages(exclude=["test*"]),
     include_package_data=True,
-    license=easy_svg.__license__,
-    description=easy_svg.__doc__,
+    license=simple_svg.__license__,
+    description=simple_svg.__doc__,
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/xshapira/django-easy-svg",
+    url="https://github.com/xshapira/django-simple-svg",
     author="Max Shapira",
     author_email="max@winoutt.com",
     maintainer="Max Shapira",
