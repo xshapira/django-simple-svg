@@ -13,7 +13,7 @@ All credits goes to [Mitchel Cabuloy](https://github.com/mixxorz)
 Install it from pypi.
 
 ```bash
-$ pip install django-svg
+$ pip install django-easy-svg
 ```
 
 Add ```easy_svg``` to your ```INSTALLED_APPS```.
