@@ -19,6 +19,7 @@ setup(
     license=django_svg.__license__,
     description=django_svg.__doc__,
     long_description=README,
+    long_description_content_type="text/markdown",
     url="https://github.com/xshapira/django-svg",
     author="Max Shapira",
     author_email="max@winoutt.com",
