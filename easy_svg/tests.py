@@ -4,7 +4,7 @@ from django.core.exceptions import ImproperlyConfigured
 from django.template import Context, Template
 from django.test.testcases import SimpleTestCase
 
-from django_svg.exceptions import SVGNotFound
+from easy_svg.exceptions import SVGNotFound
 
 
 class SVGTemplateTagTest(SimpleTestCase):

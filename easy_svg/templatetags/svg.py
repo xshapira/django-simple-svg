@@ -8,7 +8,7 @@ from django.contrib.staticfiles import finders
 from django.core.exceptions import ImproperlyConfigured
 from django.utils.safestring import mark_safe
 
-from django_svg.exceptions import SVGNotFound
+from easy_svg.exceptions import SVGNotFound
 
 logger = logging.getLogger(__name__)
 register = template.Library()
