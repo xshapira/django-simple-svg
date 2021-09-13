@@ -4,8 +4,10 @@ django-svg
 A simple plugin that adds an ``svg`` template tag to inline your SVGs in your
 Django templates.
 
-This an updated version of this repo: <br />
+### This is an updated version of this repo:
 [https://github.com/mixxorz/django-inline-svg]()
+
+
 
 All credits goes to [Mitchel Cabuloy](https://github.com/mixxorz)
 
