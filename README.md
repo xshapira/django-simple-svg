@@ -1,8 +1,9 @@
 # django-simple-svg
 
 [![PyPI version](https://badge.fury.io/py/django-simple-svg.svg)](https://badge.fury.io/py/django-simple-svg)
-[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/django-simple-svg.svg)](https://pypi.python.org/pypi/slippers/)
+[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/django-simple-svg.svg)](https://pypi.python.org/pypi/django-simple-svg/)
 [![PyPI Supported Django Versions](https://img.shields.io/pypi/djversions/django-simple-svg.svg)](https://docs.djangoproject.com/en/dev/releases/)
+[![GitHub Actions (Code quality and tests)](https://github.com/mixxorz/slippers/workflows/Code%20quality%20and%20tests/badge.svg)](https://github.com/xshapira/django-simple-svg)
 
 A simple plugin that adds an ``svg`` template tag to inline your SVGs in your
 Django templates.
