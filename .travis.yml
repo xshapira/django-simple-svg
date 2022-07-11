@@ -5,6 +5,7 @@ python:
   - 3.5
   - 3.6
   - 3.8
+  - 3.10
 env:
   - DJANGO=1.8
   - DJANGO=1.9
@@ -12,6 +13,7 @@ env:
   - DJANGO=1.11
   - DJANGO=2.0
   - DJANGO=3.2
+  - DJANGO=4.0.6
 matrix:
   exclude:
     # Python/Django combinations that aren't officially supported

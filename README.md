@@ -3,17 +3,18 @@
 A simple plugin that adds an ``svg`` template tag to inline your SVGs in your
 Django templates.
 
-### This is an updated version of this repo:
+### This is an updated version of this repo
+
 [https://github.com/mixxorz/django-inline-svg]()
 
-All credits goes to [Mitchel Cabuloy](https://github.com/mixxorz)
+Huge credit goes to [Mitchel Cabuloy](https://github.com/mixxorz)
 
 ## Installation
 
 Install it from pypi.
 
 ```bash
-$ pip install django-simple-svg
+pip install django-simple-svg
 ```
 
 Add ```simple_svg``` to your ```INSTALLED_APPS```.
@@ -60,7 +61,7 @@ You can set ```SVG_DIRS``` to control where to look for your svgs.
 
 ## Support
 
-The tests are run against Django 1.8 to 3.2 on Python 2.7, 3.4, 3.5, 3.6, 3.8.
+The tests are run against Django 1.8 to 4.0.6 on Python 2.7, 3.4, 3.5, 3.6, 3.8, 3.10.
 
 ## License
 
