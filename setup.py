@@ -1,5 +1,6 @@
 from os import chdir
 from os.path import abspath, dirname, join, normpath
+
 from setuptools import find_packages, setup
 
 with open(join(dirname(__file__), "README.md")) as readme:
@@ -30,7 +31,7 @@ setup(
         "Development Status :: 3 - Alpha",
         "Environment :: Plugins",
         "Environment :: Web Environment",
-        "Framework :: Django",
+        # "Framework :: Django",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
@@ -42,6 +43,11 @@ setup(
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.10",
+        "Framework :: Django",
+        "Framework :: Django :: 2.0",
+        "Framework :: Django :: 3.2",
+        "Framework :: Django :: 4.0.6",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
