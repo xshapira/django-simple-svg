@@ -11,7 +11,7 @@ BASE_DIR = os.path.abspath(DIRNAME)
 settings.configure(
     BASE_DIR=BASE_DIR,
     DEBUG=True,
-    SECRET_KEY="eBrZLVx4hUoBrkjwFClG5FZIzZIdyegKua",
+    SECRET_KEY="secret",
     DATABASE_ENGINE="sqlite3",
     DATABASE_NAME=os.path.join(DIRNAME, "database.db"),
     INSTALLED_APPS=(
