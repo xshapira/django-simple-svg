@@ -39,12 +39,10 @@ def svg(filename, *args, **kwargs):
     if not path:
         message = "SVG '{filename}.svg' not found".format(filename=filename)
 
-        # Raise exception if DEBUG is True, else just log a warning.
         if settings.DEBUG:
             raise SVGNotFound(message)
-        else:
-            logger.warning(message)
-            return ""
+        logger.warning(message)
+        return ""
 
     # Sometimes path can be a list/tuple if there's more than one file found
     if isinstance(path, (list, tuple)):
@@ -54,8 +52,8 @@ def svg(filename, *args, **kwargs):
         svg = svg_file.read()
 
     if kwargs:
-        attributes = " ".join(['{}="{}"'.format(k, v) for k, v in kwargs.items()])
-        svg = svg.replace("<svg", "<svg " + attributes)
+        attributes = " ".join([f'{k}="{v}"' for k, v in kwargs.items()])
+        svg = svg.replace("<svg", f"<svg {attributes}")
 
     svg = mark_safe(svg)
 

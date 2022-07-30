@@ -53,6 +53,5 @@ settings.configure(
 django.setup()
 
 test_runner = DiscoverRunner(verbosity=1)
-failures = test_runner.run_tests(["simple_svg"], verbosity=1)
-if failures:
+if failures := test_runner.run_tests(["simple_svg"], verbosity=1):
     sys.exit(failures)
