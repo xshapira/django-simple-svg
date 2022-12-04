@@ -5,7 +5,7 @@
 [![PyPI Supported Django Versions](https://img.shields.io/pypi/djversions/django-simple-svg.svg)](https://docs.djangoproject.com/en/dev/releases/)
 [![GitHub Actions (Code quality and tests)](https://github.com/xshapira/django-simple-svg/workflows/Code%20quality%20and%20tests/badge.svg)](https://github.com/xshapira/django-simple-svg)
 
-A simple plugin that adds an ``svg`` template tag to inline your SVGs in your
+A simple plugin that adds an ` `svg` ` template tag to inline your SVGs in your
 Django templates.
 
 ### This is an updated version of this [repo](https://github.com/mixxorz/django-inline-svg)
@@ -20,7 +20,7 @@ Install it from pypi.
 pip install django-simple-svg
 ```
 
-Add ```simple_svg``` to your ```INSTALLED_APPS```.
+Add `` `simple_svg` ` ` to your ` ` `INSTALLED_APPS` ``.
 
 ```python
     INSTALLED_APPS = (
@@ -32,7 +32,7 @@ Add ```simple_svg``` to your ```INSTALLED_APPS```.
 
 ## Usage
 
-Store your SVGs in folder named ```svg``` at the root of any of your static file
+Store your SVGs in folder named `` `svg` `` at the root of any of your static file
 directories.
 
 ```bash
@@ -44,7 +44,7 @@ directories.
     |       |-- cross.svg
 ```
 
-Use the ```svg``` template tag.
+Use the `` `svg` `` template tag.
 
 ```django
     {% load svg %}
@@ -52,7 +52,7 @@ Use the ```svg``` template tag.
     <h1 class="logo">{% svg 'logo' class="css-class" height="16" width="16" %}</h1>
 ```
 
-You can set ```SVG_DIRS``` to control where to look for your svgs.
+You can set `` `SVG_DIRS` `` to control where to look for your svgs.
 
 ```python
     # settings.py
@@ -64,7 +64,7 @@ You can set ```SVG_DIRS``` to control where to look for your svgs.
 
 ## Support
 
-The tests are run against Django 1.8 to 4.0.6 on Python 2.7, 3.4, 3.5, 3.6, 3.8, 3.10.
+The tests are run against Django 1.8 to 4.1.3 on Python 2.7, 3.4, 3.5, 3.6, 3.8, 3.10, 3.11.
 
 ## License
 
